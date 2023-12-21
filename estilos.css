@@ -45,3 +45,7 @@ footer{
     color:#ffff;
     font-size: 16px;
 }
+.icono{
+    border-radius: 50%;
+    background-color: #ffff;
+}
