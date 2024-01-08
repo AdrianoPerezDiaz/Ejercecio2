@@ -5,7 +5,12 @@
     margin: 8px;
     /*aqui los comentarios*/
 }
-@media (min-width 780 px){}
+@media (min-width 780 px){
+    .contenedor-grid{
+    grid-template-columns: 1fr 1fr;
+    } 
+/* con lo anterior no consigo el efecto deseado, mi intencion es que con una pantalla más pequeña tuviera una distribución diferente */
+}
 @media (min-width 1024 px){}
 nav{  
     display: flex;
