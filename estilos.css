@@ -5,29 +5,26 @@
     margin: 8px;
     /*aqui los comentarios*/
 }
-@media (min-width 780 px){
-    .contenedor-grid{
-    grid-template-columns: 1fr 1fr;
-    } 
-/* con lo anterior no consigo el efecto deseado, mi intencion es que con una pantalla más pequeña tuviera una distribución diferente */
-}
-@media (min-width 1024 px){}
+
+
 nav{  
     display: flex;
-    
+    background-color:#ffff;
+    border-bottom: 5px;
     top: 0;
     position: sticky; 
     z-index: 1;
-    /*pongo "z-index:1;" porque si no lo pongo las imagenes se sobreponen*/
+    /*    pongo "z-index:1;" porque si no lo pongo las imagenes se sobreponen*/
 } 
 ul{
     width: 100%;
     display: flex;
-    background-color: #ffff;
+   
 }
 li{
     font-size: 16px;
-    display: grid;    
+    display: grid; 
+    grid-template-columns: 100%;   
 }
 h2{   
     position: top;
@@ -41,13 +38,15 @@ h2{
     .contenedor-grid{
         display: grid;
         text-align: center;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         padding: 10px;
     }
     /*.foto{
         text-align: center;
         padding: 10px;
     }*/
+     
+/* con lo anterior no consigo el efecto deseado, mi intencion es que con una pantalla más pequeña tuviera una distribución diferente */
 footer{
     display: flex;
     width: 100%;
@@ -73,4 +72,22 @@ li:hover{
 }
 span:hover{
     background-color: aquamarine;
+}
+@media (max-width: 920px){
+    ul{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .contenedor-grid{
+    grid-template-columns: 1fr;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+@media (min-width: 1280px){
+    .contenedor-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
