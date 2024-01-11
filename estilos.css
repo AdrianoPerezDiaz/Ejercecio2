@@ -10,7 +10,7 @@
 nav{  
     display: flex;
     background-color:#ffff;
-    border-bottom: 5px;
+    border-bottom: 1px solid black;
     top: 0;
     position: sticky; 
     z-index: 1;
