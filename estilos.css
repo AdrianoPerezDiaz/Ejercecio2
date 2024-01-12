@@ -5,15 +5,22 @@
     margin: 8px;
     /*aqui los comentarios*/
 }
-nav{  
+nav{
+     top: 0;
+    position: sticky; 
+    z-index: 1;
+}
+.nav{  
     display: flex;
     background-color:#ffff;
     border-bottom: 1px solid black;
-    top: 0;
-    position: sticky; 
-    z-index: 1;
+    padding: 16px;
     /*    pongo "z-index:1;" porque si no lo pongo las imagenes se sobreponen a la barra de navegación*/
 } 
+.iconos{
+    display: flex;
+    
+}
 ul{
     width: 100%;
     display: flex;
@@ -35,21 +42,28 @@ h2{
     .contenedor-grid{
         display: grid;
         text-align: center;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         padding: 10px;
     }
 footer{
     display: flex;
-    width: 100%;
+   
     background-color: #212429;
     color:#ffff;
     font-size: 16px;
-    align-items: center ;  
+    justify-content: space-between; 
+}
+.footer-item{
+    display: flex;
+    align-items: center;
 }
 .icono{
     display: inline-block;
     border-radius: 50%;
     background-color: #ffff;
+}
+img:hover{
+    background-color: aquamarine;
 }
 .informacion:hover{
     background-color: aquamarine;
@@ -63,21 +77,25 @@ li:hover{
 span:hover{
     background-color: aquamarine;
 }
+
 @media (max-width: 920px){
+    nav img{
+        margin: 0 auto;
+    }
     ul{
-        display: grid;
-        grid-template-columns: 1fr;
+        display: none;
+    }
+    .iconos{
+        display: none;
     }
     .contenedor-grid{
     grid-template-columns: 1fr;
     }
     footer{
-        display: grid;
-        grid-template-columns: 1fr;
+        flex-direction: column;
     }
-}
-@media (min-width: 1280px){
-    .contenedor-grid{
-        grid-template-columns: 1fr 1fr 1fr;
+    .footer-item{
+        border-bottom: 1px solid white;
+        padding-bottom: 16px;
     }
 }
