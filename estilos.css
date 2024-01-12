@@ -42,7 +42,7 @@ h2{
     .contenedor-grid{
         display: grid;
         text-align: center;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         padding: 10px;
     }
 footer{
@@ -97,5 +97,10 @@ span:hover{
     .footer-item{
         border-bottom: 1px solid white;
         padding-bottom: 16px;
+    }
+}
+@media (min-width: 1280px){
+    .contenedor-grid{
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
