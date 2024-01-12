@@ -16,7 +16,6 @@ nav{
     background-color:#ffff;
     border-bottom: 1px solid black;
     padding: 16px;
-   
 } 
 .iconos{
     display: flex;
@@ -38,12 +37,12 @@ h2{
     position: relative;
     font-size: 14px;
 }
-    .contenedor-grid{
-        display: grid;
-        text-align: center;
-        grid-template-columns: 1fr 1fr;
-        padding: 10px;
-    }
+.contenedor-grid{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+}
 footer{
     display: flex;
     background-color: #212429;
@@ -86,7 +85,7 @@ span:hover{
         display: none;
     }
     .contenedor-grid{
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     }
     footer{
         flex-direction: column;
